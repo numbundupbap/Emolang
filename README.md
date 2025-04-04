@@ -1,4 +1,4 @@
 # Emolang
-🤓 🤕 👩‍💻 Esolang
+🤓😏👩‍💻 Esolang
 
 이상한언어
