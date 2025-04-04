@@ -1,15 +1,7 @@
 import fs from "fs"
+import { parseEmoji } from "./emoji_parser.js"
 
-const data = fs.readFileSync("🤔.🤓😏👩‍💻", {encoding:"utf8"})
-let dataArray = Array.from(data)
+const data = fs.readFileSync("🤔.🤓😏👩‍💻", { encoding: "utf8" })
+const dataMap = parseEmoji(data)
 
-console.log(dataArray)
-console.log(dataArray[0])
-
-dataArray.filter(chr => {
-  if (/\p{Emoji}/gu.test(chr)) return true
-  if (chr === '\n') return true
-  if (/[\s\uFE0F\u200D]/.test(chr)) return false
-
-  throw new Error(`🤦🖕🔤${chr.codePointAt()}`)
-})
+console.log(dataMap)
