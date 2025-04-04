@@ -1,0 +1,20 @@
+{
+  "name": "emolang",
+  "version": "0.0.0",
+  "description": "🤓🤕👩‍💻",
+  "homepage": "https://github.com/numbundupbap/Emolang#readme",
+  "bugs": {
+    "url": "https://github.com/numbundupbap/Emolang/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/numbundupbap/Emolang.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  }
+}
