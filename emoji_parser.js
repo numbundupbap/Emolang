@@ -12,7 +12,7 @@ export const parseEmoji = (str) => {
     })
 
     return emojiArr
-  })
+  }).filter(x => x.length)
 
   return emojiMap
 }
