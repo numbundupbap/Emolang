@@ -18,10 +18,6 @@ export let TOKEN_TYPE = {
   end: 16
 }
 
-for (let i in TOKEN_TYPE) {
-  TOKEN_TYPE[i] = i
-}
-
 const splitEmoji = (str) => {
   const segmenter = new Intl.Segmenter('und', { granularity: 'grapheme' })
   const emojiMap = str.split('\n').map(line => {
