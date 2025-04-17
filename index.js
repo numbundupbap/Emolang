@@ -2,8 +2,8 @@ import fs from "fs"
 import { parseEmoji } from "./parser.js"
 import { tokenize } from "./lexer.js"
 import { type } from "os";
-import { analyzeEmoji } from "./test,js";
-import { joinEmoji } from "./test,js";
+import { analyzeEmoji } from "./test.js";
+import { joinEmoji } from "./test.js";
 
 const data = fs.readFileSync("🤔.🤓😏👩‍💻", { encoding: "utf8" })
 // const dataMap = parseEmoji(data)
